@@ -1,0 +1,41 @@
+Pseudocode:
+
+Public Variables:
+string name - character's name
+int level - character's level
+string class - name of class
+int conScore - constitution of character
+bool isHillDwarf - if true, +1 hp per level
+bool hasToughFeat - if true, +2 hp per level
+bool isHPAveraged - use average hit die value or not
+
+
+Private Variables:
+list<string> classes - contains all character class names
+
+Dictionary<string, int> classHitDice - contains pairs of class names and associated hit die
+
+int[] conScoreModifiers - gives constitution modifier based on conScore (used as index)
+
+Main Loop:
+Start()
+{
+	CalculateHP()
+}
+
+CalculateHP() - prints out debug log of character info and hp based in different fields
+{
+	// declare int hpAmount to calculate character's hp value
+	// get local variables of conModifier (int) and hitDie (int) based on character class and defined lists/dictionaries
+
+	// if using average hp, use (n+1)/2 to calculate average roll * character level
+
+	// otherwise, roll a random hit die for each level
+
+	// if statement checks for hill dwarf and tough feat - add bonuses if true
+
+	// debug max hp in correct format with character info
+}
+
+
+

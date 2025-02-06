@@ -1,0 +1,29 @@
+public string characterName;
+public int characterLevel;
+public string characterClass;
+public int conScore;
+public bool isHillDwarf;
+public bool hasToughFeat;
+public bool averagedHp;
+private int characterHp;
+public dictionary of classes and associated hit die <string, int>
+{artificer, 8}, {barbarian, 12}, {bard, 8}, {cleric, 8}, {druid, 8}, {fighter, 10},
+{monk, 8}, {ranger, 10}, {rogue, 8}, {paladin, 10}, {sorcerer, 6}, {wizard, 6},
+{warlock, 8}
+array of ability modifiers
+-5, -4, -4, -3, -3, -2, -2, -1, -1, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7,
+8, 8, 9, 9, 10
+series of if statements to check isHillDwarf, hasToughFeat, and averagedHp, and
+calculate characterHp based on them
+private int conModifier
+if isHillDwarf
+characterHp += characterLevel
+if hasToughFeat
+characterHp += characterLevel * 2
+if averagedHp
+check dictionary for hitdie, get average rounded up (8 = 4.5 = 5)
+else
+pick a number at random from a range of 1 - hitdie
+debug log that gives the information after calculations
+(would include characterName, characterLevel, characterClass, if hill dwarf or not,
+if tough feat or not, rolled or averaged hp, and return final hp count)

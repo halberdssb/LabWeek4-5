@@ -318,6 +318,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2091016413}
   - component: {fileID: 2091016412}
+  - component: {fileID: 2091016414}
+  - component: {fileID: 2091016415}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -337,21 +339,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d887492f04cb24b8c24a62b692bbb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterClass: 1
-  myCharacter:
-    name: 
-    hp: 0
-    myClass: 0
-  characters:
-  - name: s
-    hp: 24
-    myClass: 1
-  - name: d
-    hp: 17
-    myClass: 2
-  - name: 
-    hp: 0
-    myClass: 0
+  name: j
+  level: 3
+  characterClass: Fighter
+  conScore: 7
+  isHillDwarf: 1
+  hasToughFeat: 1
+  isHPAveraged: 1
+  classes:
+  - Artificer
+  - Barbarian
+  - Bard
+  - Cleric
+  - Druid
+  - Fighter
+  - Monk
+  - Ranger
+  - Rogue
+  - Paladin
+  - Sorcerer
+  - Wizard
+  - Warlock
+  conScoreModifiers: fbfffffffcfffffffcfffffffdfffffffdfffffffefffffffeffffffffffffffffffffff00000000000000000100000001000000020000000200000003000000030000000400000004000000050000000500000006000000060000000700000007000000080000000800000009000000090000000a000000
 --- !u!4 &2091016413
 Transform:
   m_ObjectHideFlags: 0
@@ -367,6 +376,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2091016414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091016411}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34c267c42b989c4dba48fa6e4acbf66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: light
+  level: 3
+  characterClass: Fighter
+  conScore: 7
+  isHillDwarf: 1
+  hasToughFeat: 1
+  isHPAveraged: 1
+--- !u!114 &2091016415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091016411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75395d19996cfd40b2ee6d040feb132, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
